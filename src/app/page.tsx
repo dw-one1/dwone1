@@ -23,7 +23,7 @@ export default function Home() {
 	//   }, [])
 
 	return (
-		<div className="relative flex flex-col h-screen">
+		<div className="relative flex flex-col h-full">
 			<main className="bg-[#1f2022]">
 				<div className="bg-[url('/img/hearbackground.webp')] p-4 h-screen bg-center bg-no-repeat bg-cover flex justify-center">
 					<div className="max-w-6xl mx-auto flex flex-col items-center justify-center">
