@@ -89,7 +89,7 @@ export default function Home() {
 														}
 														<button className="sm:text-md text-sm w-full">
 															<a
-																href="https://x.com/RemiliaCultSol/"
+																href="https://x.com/RemiliaArise"
 																target="_blank"
 																rel="noreferrer"
 															>
