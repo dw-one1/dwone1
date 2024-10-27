@@ -43,6 +43,7 @@ export default function MemeMaker() {
   const [topText, setTopText] = useState('')
   const [bottomText, setBottomText] = useState('')
   const [textColor, setTextColor] = useState('#ffffff')
+  const [textBorderColor, setTextBorderColor] = useState('#000')
   const memeRef = useRef<HTMLDivElement>(null)
 
   const handlePrevious = () => {
@@ -91,7 +92,7 @@ export default function MemeMaker() {
               fontSize: '2em',
               fontWeight: 'bold',
               color: textColor,
-              textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000',
+              textShadow: `2px 2px 0 ${textBorderColor}, -2px -2px 0 ${textBorderColor}, 2px -2px 0 ${textBorderColor}, -2px 2px 0 ${textBorderColor}`,
               wordWrap: 'break-word',
               letterSpacing: '0.1em',
             }}
@@ -105,7 +106,7 @@ export default function MemeMaker() {
               fontSize: '2em',
               fontWeight: 'bold',
               color: textColor,
-              textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000',
+              textShadow: `2px 2px 0 ${textBorderColor}, -2px -2px 0 ${textBorderColor}, 2px -2px 0 ${textBorderColor}, -2px 2px 0 ${textBorderColor}`,
               wordWrap: 'break-word',
               letterSpacing: '0.1em',
             }}
@@ -159,6 +160,16 @@ export default function MemeMaker() {
             id="textColor"
             value={textColor}
             onChange={(e) => setTextColor(e.target.value)}
+            className="w-10 h-10 p-1"
+          />
+        </div>
+        <div className="flex items-center space-x-2">
+          <Label htmlFor="textColor" className='font-pixel font-bold'>Text Border Color</Label>
+          <Input
+            type="color"
+            id="textColor"
+            value={textBorderColor}
+            onChange={(e) => setTextBorderColor(e.target.value)}
             className="w-10 h-10 p-1"
           />
         </div>
