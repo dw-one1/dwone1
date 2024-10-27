@@ -25,8 +25,8 @@ export default function Home() {
 	return (
 		<div className="relative flex flex-col h-full">
 			<main className="bg-[#1f2022]">
-			<div className="bg-[url('/img/hearbackground.webp')] p-4 sm:min-h-screen min-h-[90vh] bg-center bg-no-repeat bg-cover flex justify-center">
-			<div className="max-w-6xl mx-auto flex flex-col items-center justify-center">
+<div className="bg-[url('/img/hearbackground.webp')] p-4 sm:min-h-screen min-h-[90vh] bg-center bg-no-repeat bg-cover flex justify-center">
+					<div className="max-w-6xl mx-auto flex flex-col items-center justify-center">
 						<div className="flex sm:flex-row flex-col gap-3 justify-center items-center">
 							<div>
 								<div className="window w-full">
@@ -148,26 +148,7 @@ export default function Home() {
 							</div>
 							<div>
 								<div className="flex flex-col w-full gap-3">
-									{/* <div className="w-full">
-              <div className="window">
-                <div className="title-bar">
-                  <div className="title-bar-text">✨ Remilia Cult ✨</div>
-                </div>
-                <div className="window-body">
-                  <p className="text-md">How Remilia you are?</p>
-                  <div className="field-row">
-                    <label htmlFor="range26">Low</label>
-                    <input id="range26" type="range" min="1" max="11" defaultValue="10" />
-                    <label htmlFor="range27">High</label>
-                  </div>
-                </div>
-                <div className="status-bar">
-                  <p className="status-bar-field">Press F1 for help</p>
-                  <p className="status-bar-field">Slide 1</p>
-                  <p className="status-bar-field">CPU Usage: 14%</p>
-                </div>
-              </div>
-            </div> */}
+	
 									<div className="flex sm:flex-col gap-3">
 										<div
 											className="relative shadow-black/5 shadow-none rounded-large"
@@ -283,6 +264,33 @@ export default function Home() {
 											{" "}
 											<p className="sm:text-2xl text-[14px]">BITGET</p>
 										</Link>
+									</div>
+								</div>
+								<div className="status-bar">
+									<p className="status-bar-field">JOIN THE CULT</p>
+									<p className="status-bar-field">STOP TRADING</p>
+									<p className="status-bar-field">START BELIEVING</p>
+								</div>
+							</div>
+						</div>
+						<div className="w-full mt-[10px]">
+							<div className="window">
+								<div className="title-bar flex justify-between">
+									<div className="title-bar-text">✨ REMILIA MEME MAKER ✨</div>
+									<div>
+									</div>
+								</div>
+								<div className="window-body">
+									<div className="flex flex-wrap justify-around">
+										<Link
+											href="/meme-maker"
+											target="_blank"
+											className="button"
+										>
+											{" "}
+											<p className="sm:text-2xl text-[14px]">	CREATE YOUR MEME</p>
+										</Link>
+										
 									</div>
 								</div>
 								<div className="status-bar">
