@@ -60,7 +60,7 @@ export default function MemeMaker() {
   const handleDownload = async () => {
     if (memeRef.current) {
       const canvas = await html2canvas(memeRef.current)
-      const image = canvas.toDataURL('image/png')
+      const image = canvas.toDataURL('image/png', 1)
       const link = document.createElement('a')
       link.href = image
       link.download = 'meme.png'
