@@ -10,6 +10,7 @@ import html2canvas from 'html2canvas'
 const memeImages = [
     '/meme/meme00.jpeg?height=500&width=500',
     '/meme/meme0.jpeg?height=500&width=500',
+    '/meme/meme0.png?height=500&width=500',
     '/meme/meme1.jpeg?height=500&width=500',
     '/meme/meme2.jpeg?height=500&width=500',
     '/meme/meme3.jpeg?height=500&width=500',
@@ -92,6 +93,7 @@ export default function MemeMaker() {
               color: textColor,
               textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000',
               wordWrap: 'break-word',
+              letterSpacing: '0.1em',
             }}
           >
             {topText}
@@ -105,6 +107,7 @@ export default function MemeMaker() {
               color: textColor,
               textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000',
               wordWrap: 'break-word',
+              letterSpacing: '0.1em',
             }}
           >
             {bottomText}
