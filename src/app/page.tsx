@@ -111,7 +111,16 @@ export default function Home() {
 																target="_blank"
 																rel="noreferrer"
 															>
-																Dex
+																DexScrener
+															</a>
+														</button>
+														<button className="sm:text-md text-sm w-full">
+															<a
+																href="https://www.dextools.io/app/en/solana/pair-explorer/FKtyCitA4fjUxQEGxC1voXx9F8bLTuNkPGRbxwoq9VwC?t=1730162055301"
+																target="_blank"
+																rel="noreferrer"
+															>
+																DexTools
 															</a>
 														</button>
 														<button className="sm:text-md text-sm w-full">
